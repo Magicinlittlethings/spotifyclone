@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#9d8189',
+                card2: '#d5bdaf',
+                ccard2: '#e3d5ca',
+                card3: '#ffb5a7',
+                ccard3: '#faf0ca',
+                card4: '#669bbc',
+                ccard4: '#0d3b66',
+                card5: '#f08080',
+                ccard5: '#f8ad9d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="first px-8 text-white relative overflow-hidden" >
+        <nav class="  flex justify-between  py-3 ">
+            <a href="" class="logo">
+                <img src="spotify logo.svg" alt="">
+                
+            </a>
+            <div class=" hidden xl:block flex justify-between">
+                <a class="pr-8  text-lg hover:text-gray-400" href="">Locations</a>
+                <a class="pr-8 text-lg hover:text-gray-400" href="">Being Here</a>
+                <a class="pr-8 text-lg hover:text-gray-400" href="">Diversity, Equity & Impact</a>
+                <a class="pr-8 text-lg hover:text-gray-400" href=""> Students</a>
+                <a class="text-lg hover:text-gray-400" href="">How We Hire</a>
+            </div>
+            <div class="jobs hidden xl:block">
+                <a class="text-lg hover:text-gray-400" href="">All Jobs</a>
+            </div>
+            
+                <span class="material-icons xl:hidden text-3xl">
+                    menu
+                    </span>
+            
+        </nav>
+        <div class=" info mt-28 ">
+            <p class="sm:text-lg xl:text-xl font-semibold">588 <span class="sm:text-sm xl:text-lg text-gray-400">jobs in </span>34 <span class="sm:text-sm xl:text-lg text-gray-400">locations</span> </p>
+            <p class="mt-5 font-semibold text-4xl md:text-6xl xl:text-8xl">Join the band</p>
+            <button class="mt-12 bg-black border border-black rounded-full px-4 py-3 hover:bg-transparent hover:text-black">
+                <p class="text-lg">Explore all jobs</p>
+            </button>
+        </div>
+        <div class="availablepositions xl:hidden absolute ">
+            <div class=" ccard1 bg-white w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-gray-400 ">New York</p>
+                <p class="text-2xl lg:text-3xl text-gray-700 mt-2 ">Backend Engineer, User Journey</p>
+            </div>
+            <div class=" ccard2 bg-card2 w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-gray-400 text-ccard2 ">New York</p>
+                <p class="text-2xl lg:text-3xl text-gray-700 mt-2">Product Designer, Differenciated Content Experience</p>
+            </div>
+            <div class="ccard3 bg-card3 w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard3 ">New York</p>
+                <p class="text-2xl lg:text-3xl text-gray-700 mt-2">Senior Product Manager, Big Data & Publishing</p>
+            </div>
+            <div class="ccard4 bg-card4 w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard4 ">New York</p>
+                <p class="text-2xl lg:text-3xl text-gray-700 mt-2">Sr. Partner Manager, Black Creators</p>
+            </div>
+            <div class="ccard5 bg-card5 w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard5 ">New York</p>
+                <p class="text-2xl lg:text-3xl text-gray-700 mt-2">Engineering Manager, Personalization</p>
+            </div>
+           
+        </div>
+        <div class="availablepositions hidden xl:block absolute ">
+            <div class=" card1 bg-white w-96 py-5 border border-transparent rounded-xl px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-gray-400 ">New York</p>
+                <p class="text-3xl text-gray-700 mt-2 ">Backend Engineer, User Journey</p>
+            </div>
+            <div class=" card2 bg-card2 w-96 py-5 border border-transparent rounded-xl px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-gray-400 text-ccard2 ">New York</p>
+                <p class="text-3xl text-gray-700 mt-2">Product Designer, Differenciated Content Experience</p>
+            </div>
+            <div class="card3 bg-card3 w-96 py-5 border border-transparent rounded-xl px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard3 ">New York</p>
+                <p class="text-3xl text-gray-700 mt-2">Senior Product Manager, Big Data & Publishing</p>
+            </div>
+            <div class="card4 bg-card4 w-96 py-5 border border-transparent rounded-xl px-8 mb-36 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard4 ">New York</p>
+                <p class="text-3xl text-gray-700 mt-2">Sr. Partner Manager, Black Creators</p>
+            </div>
+            <div class="card5 bg-card5 w-96 py-5 border border-transparent rounded-xl px-8 hover:scale-x-105 cursor-pointer">
+                <p class="text-ccard5 ">New York</p>
+                <p class="text-3xl text-gray-700 mt-2">Engineering Manager, Personalization</p>
+            </div>
+           
+        </div>
+        
+        <div class="search relative mt-32 z-20">
+            <div class=" absolute bg-white border  rounded-full h-10 w-10 right-3 bottom-3 text-gray-600 flex place-content-center hover:bg-transparent hover:text-white">
+                <span class="material-icons text-3xl">arrow_forward</span>
+            </div>
+                
+                <span class="material-icons absolute text-white text-2xl left-4 bottom-3">search</span>
+
+                <input class="w-full h-16 text-xl  px-10 py-2 border border-transparent rounded-full bg-clifford" type="search" placeholder="Search jobs and keywords">
+            
+        </div>
+    </section>
+    <section class="second bg-transparent ">
+        <div class="whoweare px-8 py-8 border-t overflow-hidden  rounded-3xl bg-white h-full">
+            <p class=" text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-gray-800 rounded-full px-4 py-1 text-2xl ">1</span> Who we are</p>
+            <div class="grid grid-cols-5 gap-28  px-20 h-screen">
+                <div class="col-span-2">
+                    <img class="border rounded-2xl border h-3/4" src="WhoWeAre-940.jpg" alt="">
+                </div>
+                <div class="h-3/4 my-auto col-span-3">
+                    <p class="text-5xl text-gray-800 ">One band, no solo artists</p>
+                    <p class="text-gray-700 text-2xl my-8 leading-normal">It's our culture. It's our values. It's who we are and what we're not. It's why we do things the way we do and why that matters.</p>
+                    <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">Read our manifesto</button>
+                </div>
+            </div>
+        </div>
+        <div class="wherewebelong px-8 py-8 border-t overflow-hidden rounded-3xl bg-white">
+            <p class="text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class=" border border-gray-800 rounded-full px-3 ">2</span> Where we belong</p>
+            <div class="grid grid-cols-5 gap-28  px-20 h-screen">
+                <div class="col-span-2">
+                    <img class="border rounded-2xl border-transparent h-3/4" src="WhereWeBelong-940.jpg" alt="">
+                </div>
+                <div class="h-3/4 my-auto col-span-3">
+                    <p class="text-5xl text-gray-800 ">We all have parts to play</p>
+                    <p class="text-gray-700 text-2xl my-8 leading-normal">We want you to feel like you belong here and can thrive here. No two creators orlisteners are the same, so neither are we.</p>
+                    <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">Learn about belonging</button>
+                </div>
+            </div> 
+        </div>
+        <div class="howweact px-8 py-8 border-t overflow-hidden  rounded-3xl">
+                <p class="text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-gray-800 rounded-full px-3   ">3</span> How we act</p>
+                <div class="grid grid-cols-5 gap-28  px-20 h-screen">
+                    <div class="col-span-2">
+                        <img class="border rounded-2xl border-transparent h-3/4" src="HowWeAct-940.jpg" alt="">
+                    </div>
+                    <div class="h-3/4 my-auto col-span-3">
+                        <p class="text-5xl text-gray-800 ">Listening and learning</p>
+                        <p class="text-gray-700 text-2xl my-8 leading-normal">We are not just shaping the future of audio. We want to help shape a better future for society and the planet too. Bit by bit. Day by day.</p>
+                        <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">See our approach</button>
+                    </div>
+                </div>
+         </div>
+    </section>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
