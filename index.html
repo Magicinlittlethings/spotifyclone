@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    
     <link href="style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -29,37 +31,36 @@
 
     <title>Document</title>
 </head>
-<body>
-    <section class="first px-8 text-white relative overflow-hidden" >
+<body class="hidden lg:block">
+    <section class="first px-10 text-white sticky top-0 overflow-hidden " id="hero" >
+        <div class="relative">
         <nav class="  flex justify-between  py-3 ">
             <a href="" class="logo">
                 <img src="spotify logo.svg" alt="">
                 
             </a>
-            <div class=" hidden xl:block flex justify-between">
-                <a class="pr-8  text-lg hover:text-gray-400" href="">Locations</a>
-                <a class="pr-8 text-lg hover:text-gray-400" href="">Being Here</a>
-                <a class="pr-8 text-lg hover:text-gray-400" href="">Diversity, Equity & Impact</a>
-                <a class="pr-8 text-lg hover:text-gray-400" href=""> Students</a>
-                <a class="text-lg hover:text-gray-400" href="">How We Hire</a>
+            <div class=" block flex justify-between">
+                <a class="pr-8  text-lg hover:text-gray-400 ease-in-out duration-200" href="">Locations</a>
+                <a class="pr-8 text-lg hover:text-gray-400 ease-in-out duration-200" href="">Being Here</a>
+                <a class="pr-8 text-lg hover:text-gray-400 ease-in-out duration-200" href="">Diversity, Equity & Impact</a>
+                <a class="pr-8 text-lg hover:text-gray-400 ease-in-out duration-200" href=""> Students</a>
+                <a class="text-lg hover:text-gray-400 ease-in-out duration-200" href="">How We Hire</a>
             </div>
-            <div class="jobs hidden xl:block">
-                <a class="text-lg hover:text-gray-400" href="">All Jobs</a>
+            <div class="jobs block">
+                <a class="text-lg hover:text-gray-400 ease-in-out duration-200" href="">All Jobs</a>
             </div>
             
-                <span class="material-icons xl:hidden text-3xl">
-                    menu
-                    </span>
+                
             
         </nav>
         <div class=" info mt-28 ">
-            <p class="sm:text-lg xl:text-xl font-semibold">588 <span class="sm:text-sm xl:text-lg text-gray-400">jobs in </span>34 <span class="sm:text-sm xl:text-lg text-gray-400">locations</span> </p>
-            <p class="mt-5 font-semibold text-4xl md:text-6xl xl:text-8xl">Join the band</p>
-            <button class="mt-12 bg-black border border-black rounded-full px-4 py-3 hover:bg-transparent hover:text-black">
+            <p class="text-xl font-semibold">588 <span class="text-lg text-gray-400">jobs in </span>34 <span class="text-lg text-gray-400">locations</span> </p>
+            <p class="mt-5 font-semibold text-4xl text-8xl">Join the band</p>
+            <button class="mt-12 font-semibold bg-black border border-black rounded-full px-4 py-3 hover:bg-transparent hover:text-black ease-in-out duration-200">
                 <p class="text-lg">Explore all jobs</p>
             </button>
         </div>
-        <div class="availablepositions xl:hidden absolute ">
+       <!-- <div class="availablepositions xl:hidden absolute ">
             <div class=" ccard1 bg-white w-96 py-5 border border-transparent rounded-xl px-5 lg:px-8 mb-36 hover:scale-x-105 cursor-pointer">
                 <p class="text-gray-400 ">New York</p>
                 <p class="text-2xl lg:text-3xl text-gray-700 mt-2 ">Backend Engineer, User Journey</p>
@@ -82,7 +83,8 @@
             </div>
            
         </div>
-        <div class="availablepositions hidden xl:block absolute ">
+        -->
+        <div class="availablepositions block absolute ">
             <div class=" card1 bg-white w-96 py-5 border border-transparent rounded-xl px-8 mb-36 hover:scale-x-105 cursor-pointer">
                 <p class="text-gray-400 ">New York</p>
                 <p class="text-3xl text-gray-700 mt-2 ">Backend Engineer, User Journey</p>
@@ -116,23 +118,28 @@
                 <input class="w-full h-16 text-xl  px-10 py-2 border border-transparent rounded-full bg-clifford" type="search" placeholder="Search jobs and keywords">
             
         </div>
+        </div>
     </section>
-    <section class="second bg-transparent ">
-        <div class="whoweare px-8 py-8 border-t overflow-hidden  rounded-3xl bg-white h-full">
-            <p class=" text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-gray-800 rounded-full px-4 py-1 text-2xl ">1</span> Who we are</p>
-            <div class="grid grid-cols-5 gap-28  px-20 h-screen">
+    <section class="second bg-transparent  ">
+        
+        <div class="whoweare">
+          <div class=" px-8 py-8 border-t   rounded-3xl bg-white h-full">
+            <p class=" text-black text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-black rounded-full px-4 py-1 text-2xl ">1</span> Who we are</p>
+            <div class=" ok grid grid-cols-5 gap-28  px-20 h-screen">
                 <div class="col-span-2">
                     <img class="border rounded-2xl border h-3/4" src="WhoWeAre-940.jpg" alt="">
                 </div>
                 <div class="h-3/4 my-auto col-span-3">
                     <p class="text-5xl text-gray-800 ">One band, no solo artists</p>
                     <p class="text-gray-700 text-2xl my-8 leading-normal">It's our culture. It's our values. It's who we are and what we're not. It's why we do things the way we do and why that matters.</p>
-                    <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">Read our manifesto</button>
+                    <button class="bg-black text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-black hover:border-black ease-in-out duration-200">Read our manifesto</button>
                 </div>
             </div>
+          </div>
         </div>
-        <div class="wherewebelong px-8 py-8 border-t overflow-hidden rounded-3xl bg-white">
-            <p class="text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class=" border border-gray-800 rounded-full px-3 ">2</span> Where we belong</p>
+        <div class="wherewebelong   ">
+          <div class="px-8 py-8 border-t  rounded-3xl bg-white h-full">
+            <p class="text-black text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class=" border border-black rounded-full px-3 ">2</span> Where we belong</p>
             <div class="grid grid-cols-5 gap-28  px-20 h-screen">
                 <div class="col-span-2">
                     <img class="border rounded-2xl border-transparent h-3/4" src="WhereWeBelong-940.jpg" alt="">
@@ -140,12 +147,14 @@
                 <div class="h-3/4 my-auto col-span-3">
                     <p class="text-5xl text-gray-800 ">We all have parts to play</p>
                     <p class="text-gray-700 text-2xl my-8 leading-normal">We want you to feel like you belong here and can thrive here. No two creators orlisteners are the same, so neither are we.</p>
-                    <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">Learn about belonging</button>
+                    <button class="bg-black text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-black hover:border-black ease-in-out duration-200">Learn about belonging</button>
                 </div>
             </div> 
+          </div>
         </div>
-        <div class="howweact px-8 py-8 border-t overflow-hidden  rounded-3xl">
-                <p class="text-gray-800 text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-gray-800 rounded-full px-3   ">3</span> How we act</p>
+        <div class="howweact   ">
+            <div class="bg-white px-8 py-8 border-t   rounded-3xl h-full">
+                <p class="text-black text-3xl font-light mb-10 cursor-pointer  hover:text-gray-500"><span class="border border-black rounded-full px-3   ">3</span> How we act</p>
                 <div class="grid grid-cols-5 gap-28  px-20 h-screen">
                     <div class="col-span-2">
                         <img class="border rounded-2xl border-transparent h-3/4" src="HowWeAct-940.jpg" alt="">
@@ -153,14 +162,597 @@
                     <div class="h-3/4 my-auto col-span-3">
                         <p class="text-5xl text-gray-800 ">Listening and learning</p>
                         <p class="text-gray-700 text-2xl my-8 leading-normal">We are not just shaping the future of audio. We want to help shape a better future for society and the planet too. Bit by bit. Day by day.</p>
-                        <button class="bg-gray-900 text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-gray-900 hover:border-gray-900">See our approach</button>
+                        <button class="bg-black text-white text-lg font-semibold border rounded-full border-transparent py-4 px-6 hover:bg-transparent hover:text-black hover:border-black ease-in-out duration-200">See our approach</button>
                     </div>
                 </div>
+            </div>
          </div>
-    </section>
-  
+    </section> 
+    <div class="bodyy bg-white relative ">
+        <section class="third pt-48 ">
+            <p class="feat black text-6xl text-center text-black">Featured jobs</p>
+            <div class="swiperr mt-20  px-5 overflow-hidden ">
+                <div class="swiper-wrapper h-3/4">
+                <div class=" swiper-slide opp relative  border bg-transparent rounded-2xl p-8 cursor-pointer mr-52" style=" width:26rem;">
+                    <div class="flex justify-center"><div class=" text-xl rounded-full inline-block px-3 py-1 " style="background:#d0f4de;"><p>Design</p></div></div>
+                    <p class=" mt-10 text-4xl text-center" >
+                        Design Manager
+                    </p>
+                    <p class=" mt-2 text-gray-400 text-4xl text-center" >
+                        Growth Opportunities
+                    </p>
+                    <div class=" flex justify-center ">
+                        <div class="absolute bottom-6">
+                            <p class="text-xl mr-4" >New York</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                
+                <div class=" swiper-slide opp relative  border bg-transparent rounded-2xl p-8 cursor-pointer mr-52" style=" width:26rem;">
+                    <div class="flex justify-center"><div class=" text-xl rounded-full inline-block px-3 py-1" style="background:#d0f4de";><p>Marketing</p></div></div>
+                    <p class=" mt-10 text-4xl text-center" >
+                        Associate Manager
+                    </p>
+                    <p class=" mt-2 text-gray-400 text-4xl text-center" >
+                        Product Marketing, Targeting & Data Privacy
+                    </p>
+                    <div class=" flex justify-center ">
+                        <div class="absolute bottom-6">
+                            <p class="text-xl mr-4" >New York</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                
+                <div class=" swiper-slide opp relative  border bg-transparent rounded-2xl p-8 cursor-pointer mr-52" style=" width:26rem;">
+                    <div class="flex justify-center"><div class=" text-xl rounded-full inline-block px-3 py-1 " style="background:#d0f4de;"><p>Content</p></div></div>
+                    <p class=" mt-10 text-4xl text-center" >
+                        Sr. Manager
+                    </p>
+                    <p class=" mt-2 text-gray-400 text-4xl text-center" >
+                       Innovation + Market Intelligence
+                    </p>
+                    <div class=" flex justify-center ">
+                        <div class="absolute bottom-6">
+                            <p class="text-xl mr-4" >New York</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                
+                <div class=" swiper-slide opp relative  border bg-transparent rounded-2xl p-8 cursor-pointer mr-52" style=" width:26rem;">
+                    <div class="flex justify-center"><div class=" text-xl rounded-full inline-block px-3 py-1 " style="background:#d0f4de;"><p>Sales</p></div></div>
+                    <p class=" mt-10 text-4xl text-center" >
+                        Sales Trainer
+                    </p>
+                    <p class=" mt-2 text-gray-400 text-4xl text-center" >
+                        Americas, Ad Sales
+                    </p>
+                    <div class=" flex justify-center ">
+                        <div class="absolute bottom-6">
+                            <p class="text-xl mr-4" >New York</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+            
+                <div class=" swiper-slide opp relative  border bg-transparent rounded-2xl p-8 cursor-pointer mr-52" style=" width:26rem;">
+                    <div class="flex justify-center"><div class=" text-xl rounded-full inline-block px-3 py-1  " style="background:#d0f4de;"><p>Engineering</p></div></div>
+                    <p class=" mt-10 text-4xl text-center" >
+                        Backend Engineer
+                    </p>
+                    <p class=" mt-2 text-gray-400 text-4xl text-center" >
+                       Personalization
+                    </p>
+                    <div class=" flex justify-center ">
+                        <div class="absolute bottom-6">
+                            <p class="text-xl mr-4" >Amsterdam</p>
+                        </div>
+                       
+                        
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            
+        </section>
+        <section class="fourth relative   pt-36">
+            <div class="here  flex justify-center">
+                <div>
+                    <p class="text-black  text-6xl text-center">Here, there, everywhere</p>
+                    <p class="text-gray-800 text-2xl text-center mt-8 px-80">
+                        Audio is global, so we are too. Wherever in the world you're looking for a new role, chances are we're there.
+                    </p>
+                    <div class="flex justify-center">
+                        <button class = " bg-black hover:bg-transparent font-semiboldhover:bg-white text-white hover:text-black border border-transparent hover:border-black  rounded-full px-10 py-4 mt-12 ease-in-out duration-200"><p class=" text-lg">See all locations</p></button>
+                    </div>
+                    
+                </div>
+    
+            </div>
+            <img class ="absolute top-28 left-20" src="download.svg">
+            <img class="absolute right-20 top-80" src="download (1).svg">
+            <div class="marquee mt-28">
+                <div class="marquee1 cursor-pointer ">
+                    <div class ="content1 flex justify-between">
+                    <div class=" flex justify-between mx-28">
+                        <img class=" border border-transparent rounded-2xl h-32 w-32" src="tokyo.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Tokyo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">9</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sydney.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Sydney</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">13</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="berlin.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Berlin</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">4</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="amsterdam.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Amsterdam</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">19</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="tokyo.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Tokyo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">9</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sydney.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Sydney</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">13</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="berlin.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Berlin</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">4</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="amsterdam.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Amsterdam</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">19</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="tokyo.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Tokyo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">9</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sydney.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Sydney</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">13</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="berlin.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Berlin</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">4</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="amsterdam.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Amsterdam</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">19</p></div>
+                    </div>
+                    </div>
+        
+                </div>
+                <div class="marquee2  mt-16 cursor-pointer" >
+                    <div class ="content2 flex justify-between">
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="milan.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Milan</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sao-paulo.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Sao Paulo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="toronto.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Toronto</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mumbai.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Mumbai</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">6</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="milan.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Milan</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sao-paulo.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Sao Paulo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="toronto.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Toronto</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mumbai.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Mumbai</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">6</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="milan.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Milan</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sao-paulo.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Sao Paulo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="toronto.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Toronto</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mumbai.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Mumbai</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">6</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="milan.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Milan</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="sao-paulo.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Sao Paulo</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="toronto.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Toronto</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">2</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mumbai.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Mumbai</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">6</p></div>
+                    </div>
+                    </div>
+        
+                </div>
+                <div class="marquee3  mt-16 cursor-pointer" >
+                    <div class ="content3 flex justify-between">
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="dusseldorf.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Dusseldorf</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mexico-city.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Mexico City</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">12</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="brussels.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Brussels</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="rio-de-janeiro.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Rio de Janeiro</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="dusseldorf.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Dusseldorf</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mexico-city.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Mexico City</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">12</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="brussels.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Brussels</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="rio-de-janeiro.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Rio de Janeiro</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="dusseldorf.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Dusseldorf</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mexico-city.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Mexico City</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">12</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="brussels.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Brussels</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="rio-de-janeiro.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Rio de Janeiro</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="dusseldorf.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Dusseldorf</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">1</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="mexico-city.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Mexico City</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">12</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="brussels.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Brussels</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="rio-de-janeiro.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Rio de Janeiro</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    </div>
+        
+                </div>
+                <div class="marquee4  mt-16 cursor-pointer" >
+                    <div class ="content4 flex justify-between">
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="frankfurt.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Frankfurt</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="hamburg.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Hamburg</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="paris.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Paris</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="copenhagen.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Copenhagen</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="frankfurt.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Frankfurt</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="hamburg.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Hamburg</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="paris.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Paris</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="copenhagen.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Copenhagen</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="frankfurt.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Frankfurt</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="hamburg.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Hamburg</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="paris.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Paris</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="copenhagen.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Copenhagen</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="frankfurt.webp">
+                        <p class="text-black   mx-8" style="font-size: 5.8rem;">Frankfurt</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="hamburg.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem; " >Hamburg</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="paris.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Paris</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    <div class="flex justify-between mx-28">
+                        <img class="border border-transparent rounded-2xl h-32 w-32" src="copenhagen.webp">
+                        <p class="text-black  mx-8" style="font-size: 5.8rem;">Copenhagen</p>
+                        <div ><p class="border border-black rounded-full text-3xl px-4">0</p></div>
+                    </div>
+                    
+                    </div>
+        
+                </div>
+            </div>
+            
+    
+        </section>
+        <section class="fifth pt-52 text-white">
+            <p class="black text-6xl text-center text-black">Fresh content</p>
+            <div class="swiper mt-20  px-5">
+                <div class="swiper-wrapper h-3/4">
+                <div class=" swiper-slide relative  border border-transparent rounded-2xl p-8 cursor-pointer mr-10" style="background-color:rgb(39, 71, 39) ; width:26rem;">
+                    <div class=" text-xl rounded-full inline-block px-3 py-1" style="background-color:#0f271b ;"><p>Podcast</p></div>
+                    <p class=" mt-8" style="font-size: 2.5rem;">
+                        NerdOut@Spotify, 06: Bits of Math at Scale
+                    </p>
+                    <div class="flex absolute left-6 bottom-6 ">
+                        <p class="text-xl mr-4" >Listen</p>
+                        <span class="material-icons bg-white text-base border border-transparent rounded-full text-black px-1 hover:bg-transparent hover:text-white hover:border-white">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="swiper-slide relative  border border-transparent rounded-2xl p-8 cursor-pointer mr-10" style="background-color:rgb(39, 71, 39) ; width:26rem;">
+                    <div class=" text-xl rounded-full inline-block px-3 py-1" style="background-color:#0f271b ;"><p>Podcast</p></div>
+                    <p class=" mt-8" style="font-size: 2.5rem;">
+                        NerdOut@Spotify, 05: Advent of Code
+                    </p>
+                    <div class="flex absolute left-6 bottom-6 ">
+                        <p class="text-xl mr-4" >Listen</p>
+                        <span class="material-icons bg-white text-base border border-transparent rounded-full text-black px-1 hover:bg-transparent hover:text-white hover:border-white">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="swiper-slide relative  border border-transparent rounded-2xl p-8 cursor-pointer mr-10" style="background-color:rgb(39, 71, 39) ; width:26rem;">
+                    <div class=" text-xl rounded-full inline-block px-3 py-1" style="background-color:#0f271b ;"><p>Podcast</p></div>
+                    <p class=" mt-8" style="font-size: 2.5rem;">
+                        NerdOut@Spotify, 04: Backstage in the Wild
+                    </p>
+                    <div class="flex absolute left-6 bottom-6">
+                        <p class="text-xl mr-4" >Listen</p>
+                        <span class="material-icons bg-white text-base border border-transparent rounded-full text-black px-1 hover:bg-transparent hover:text-white hover:border-white">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-black  border border-transparent rounded-2xl p-8 cursor-pointer mr-5" style="background-color:rgb(39, 71, 39) ; width:26rem;">
+                    <div class=" text-xl rounded-full inline-block px-3 py-1" style="background-color:#0f271b ;"><p>Podcast</p></div>
+                    <p class=" mt-8" style="font-size: 2.5rem;">
+                        NerdOut@Spotify, 03: Community Builders
+                    </p>
+                    <div class="flex mt-40 ">
+                        <p class="text-xl mr-4" >Listen</p>
+                        <span class="material-icons bg-white text-base border border-transparent rounded-full text-black px-1 hover:bg-transparent hover:text-white hover:border-white">arrow_forward</span>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination hidden"></div>
+            </div>
+            <div class="flex justify-center">
+                <button class = " bg-black font-semibold hover:bg-white text-white hover:text-black border border-transparent hover:border-black  rounded-full px-10 py-4 mt-12 "><p class=" text-lg ease-in-out duration-200">Discover more</p></button>
+            </div>
+        </section>
+        <section class="sixth pt-52 pb-36 px-10 border-b border-black rounded-3xl">
+            <p class="black text-6xl text-center text-black mb-20">Quick clicks</p>
+            <div class="border border-text-gray-800 rounded-full px-10 py-8  hover:border-black hover:pr-16 bg-transparent cursor-pointer ease-in-out duration-200">
+                <div class="flex justify-between">
+                    <p class="text-gray-400 text-4xl mt-3">Discover more about our <span class="text-black">categories</span></p>
+                    <i class="material-icons text-white text-3xl px-4 py-3 bg-black border border-transparent rounded-full hover:text-black hover:bg-white hover:border-black ease-in-out duration-200">arrow_forward</i>
+                </div>
+            </div>
+            <div class="border border-text-gray-800 rounded-full px-10 py-8  hover:border-black hover:pr-16 bg-transparent mt-8 cursor-pointer ease-in-out duration-200">
+                <div class="flex justify-between">
+                    <p class="text-gray-400 text-4xl mt-3"><span class="text-black">Students, </span>make an impact not the coffees</p>
+                    <i class="material-icons text-white text-3xl px-4 py-3 bg-black border border-transparent rounded-full hover:text-black hover:bg-white hover:border-black ease-in-out duration-200">arrow_forward</i>
+                </div>
+            </div>
+            <div class="border border-text-gray-800 rounded-full px-10 py-8  hover:border-black hover:pr-16 bg-transparent mt-8 cursor-pointer ease-in-out duration-200">
+                <div class="flex justify-between">
+                    <p class="text-gray-400 text-4xl mt-3">Read about <span class="text-black">being here</span></p>
+                    <i class="material-icons text-white text-3xl px-4 py-3 bg-black border border-transparent rounded-full hover:text-black hover:bg-white hover:border-black ease-in-out duration-200">arrow_forward</i>
+                </div>
+            </div>
+        </section>
+        <section class="seventh   pt-48 pb-10 bg-black px-10">
+            <div class="flex justify-center">
+              <div>
+                <div class="flex justify-center"><img class="" src="download (2).svg"></div>
+                
+                <p class="text-white text-6xl mt-16 text-center">Sound good?</p>
+                <p class="text-2xl mt-8 text-white text-center mx-80">Get to know our hiring process before you apply or find answers to any lingering questions, right here, right now.</p>
+                <div class="flex justify-center mt-12">
+                    <button class="border font-semibold border-white rounded-full bg-transparent hover:bg-white text-white hover:text-black text-lg px-8 py-4 mr-6 ease-in-out duration-200">How we hire</button>
+                    <button class="border font-semibold border-white rounded-full bg-transparent hover:bg-white text-white hover:text-black text-lg px-8 py-4 mr-6 ease-in-out duration-200">Read our FAQ</button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between text-gray-400 pt-40 ">
+                <div>
+                    <p class="text-lg font-semibold text-white mb-5">Communities</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-5">Design</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Developers</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Brands</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Artists</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Engineering</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Research</p>
+
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-white mb-5">Stay Updated</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-5">Latest</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Instagram</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">LinkedIn</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Twitter</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Youtube</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Podcast</p>
+
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-white mb-5">Careers</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-5">Locations</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Being here</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Students</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">How we hire</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">All Jobs</p>
+                    
+
+                </div>
+                <div>
+                    <p class="text-lg font-semibold text-white mb-5">Diversity, Equity & Impact </p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-5">Mental Health</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Diversity, Inclusion & Belonging</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Climate Action</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Racial Equity</p>
+                    <p class="text-base font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mb-4">Social Impact</p>
+                    
+
+                </div>
+            </div>
+            <div class="mt-20 flex justify-between">
+                <div class="flex justify-between text-gray-400">
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">2022 Spotify AB.</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">Legal</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">Privacy center</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">Privacy policy</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">Cookies</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer mr-10">About ads</p>
+                    <p class="text-sm font-semibold ease-in-out duration-200 hover:text-white cursor-pointer">Additional CA Privacy Disclosures</p>
+                </div>
+                <a  href="#" class="text-black hover:text-white bg-white hover:bg-transparent border border-transparent hover:border-white  rounded-full ease-in-out duration-200"><span class="material-icons text-3xl px-3 py-2">arrow_upward</span></a>
+            </div>
+            
+        </section>
+    </div> 
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
+    
 </body>
+
 </html>
